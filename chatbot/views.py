@@ -8,6 +8,9 @@ from .models import Chat
 from django.utils import timezone
 from dotenv import load_dotenv
 import os
+from django.contrib.auth.decorators import login_required
+
+
 # Load the environment variables from .env
 load_dotenv()
 
@@ -30,6 +33,7 @@ def ask_openai(user_message):
     return answer
 
 # Create your views here.
+@login_required
 def chatbot(request):
     chats = Chat.objects.filter(user=request.user)
 
@@ -79,6 +83,7 @@ def register(request):
             return render(request, 'register.html', {'error_message': error_message})
     return render(request, 'register.html')
 
+@login_required
 def logout(request):
     auth.logout(request)
     return redirect('login')
