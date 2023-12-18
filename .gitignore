@@ -1,0 +1,80 @@
+# Django project files
+*.pyc
+*.pyo
+__pycache__/
+*.sqlite3
+*.log
+
+# Development/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment files
+.env
+
+# Static files
+/staticfiles/
+
+# Media files
+/media/
+
+# Dependency directories
+venv/
+env/
+myenv/
+
+# Compiled Python bytecode
+__pycache__/
+
+# Ignore sensitive or generated configuration files
+*.config
+*.key
+*.pem
+
+# Ignore sensitive or generated database files
+*.db
+
+# Ignore sensitive or generated secret keys
+*.secretkey
+
+# Ignore deployment-specific files
+/.env.production
+/.env.staging
+/.env.test
+/.env.local
+
+# Ignore deployment-specific directories
+/deploy/
+/deployment/
+/deployments/
+/deployed/
+
+# Ignore Docker-specific files
+.dockerignore
+Dockerfile
+docker-compose.yml
+docker-compose.yaml
+.docker/
+
+# Ignore package manager files
+pip-lock.txt
+yarn.lock
+npm-debug.log
+
+# Ignore compiled assets
+/assets/
+
+# Ignore backup or temporary files
+*.bak
+*.tmp
+*.swp
+*~
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Icon?
