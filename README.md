@@ -4,6 +4,9 @@ Tel: +237681775574
 
 Nyuydine-GPT is an AI chatbot incorporated using the OpenAI API. It leverages the power of GPT (Generative Pre-trained Transformer) to provide natural language processing capabilities and engage in interactive conversations with users.
 
+#Deployed
+https://nyuydinegpt.onrender.com/
+
 ## Table of Contents
 
 - [Project Overview](#project-overview)
